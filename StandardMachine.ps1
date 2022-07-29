@@ -17,7 +17,7 @@ Import-Module OSD -Force
 
 # Start OSDCloud ZTI
 Write-Host  -ForegroundColor Cyan "Start OSDCloud with Pre-Defined Values"
-Start-OSDCloud -Screenshot -OSLanguage en-us -OSVersion 'Windows 10' -OSBuild 21H1 -OSEdition Pro -ZTI
+Start-OSDCloud -Screenshot -OSLanguage en-us -OSVersion 'Windows 10' -OSBuild 21H2 -OSEdition Pro -ZTI
 
 # Post Actions
 # Write-Host  -ForegroundColor Cyan "Starting OSDCloud PostAction ..."
