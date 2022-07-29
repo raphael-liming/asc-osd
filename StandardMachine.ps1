@@ -2,10 +2,12 @@ Write-Host  -ForegroundColor Cyan "Starting American Safety Council's Custom OSD
 Start-Sleep -Seconds 5
 
 #Change Display Resolution for Virtual Machine
+<#
 if ((Get-MyComputerModel) -match 'Virtual') {
     Write-Host  -ForegroundColor Cyan "Setting Display Resolution to 1600x"
     Set-DisRes 1600
 }
+#>
 
 # sure I have the latest OSD Content
 Write-Host  -ForegroundColor Cyan "Updating the OSD PowerShell Module"
@@ -15,7 +17,7 @@ Import-Module OSD -Force
 
 # Start OSDCloud ZTI
 Write-Host  -ForegroundColor Cyan "Start OSDCloud with Pre-Defined Values"
-Start-OSDCloud -Screenshot -OSLanguage en-us -OSBuild 21H1 -OSEdition Pro -ZTI
+Start-OSDCloud -Screenshot -OSLanguage en-us -OSVersion 'Windows 10' -OSBuild 21H1 -OSEdition Pro -ZTI
 
 # Post Actions
 # Write-Host  -ForegroundColor Cyan "Starting OSDCloud PostAction ..."
