@@ -24,6 +24,6 @@ Start-OSDCloud -Screenshot -Firmware -OSLanguage en-us -OSVersion 'Windows 10' -
 # Write-Warning "I'm not sure of what to put here yet"
 
 # Restart from WinPE
-Write-Host  -ForegroundColor Cyan "Restarting in 20 seconds!"
-Start-Sleep -Seconds 20
+Write-Host  -ForegroundColor Cyan "Imaging complete!"
+Read-Host -Prompt "Press any key to continue"
 wpeutil reboot
